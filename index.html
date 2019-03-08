@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,11 +21,51 @@
         </ul>
         <div class="text">
             <p>Cześć!</p>
-            <h1>Jestem Jacek, Junior Front-End Developer</h1>
-            <button>Moja praca</button>
+            <h1>Jestem Jacek <br>Junior Web Developer</h1>
+            <button>Moje Portfolio</button>
         </div>
     </header>
+    <section class="wrapper" id="portfolio">
+        <h2>Moje Portfolio</h2>
+        <div class="container">
+            <a href="https://store.steampowered.com/app/752800/Mysterious_Realms_RPG/" target="_blank"><img src="img/websites/website1.png" alt=""></a>
+            <a href="http://mrealms.com/" target="_blank"><img src="img/websites/website2.png" alt=""></a>
+            <a href="http://foxoclock.com/" target="_blank"><img src="img/websites/website3.png" alt=""></a>
+            <a href="" target="_blank"><img src="img/websites/comingsoon.png" alt=""></a>
+            <a href="" target="_blank"><img src="img/websites/comingsoon.png" alt=""></a>
+            <a href="" target="_blank"><img src="img/websites/comingsoon.png" alt=""></a>
+        </div>
+    </section>
+    <section class="wrapper" id="aboutme">
+        <h2>O mnie</h2>
+        <div class="container">
+            <img src="img/avatar.jpg" alt="">
+            <div class="icontainer">
+                <a href="https://www.facebook.com/jacek.dudziec"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.facebook.com/jacek.dudziec"><i class="fab fa-twitter-square"></i></a>
+            </div>
+            <p>Cześć! Nazywam się <span>Jacek Dudziec</span>. Jestem Junior Front-End Developerem z Wrocławia. Od pół
+                roku uczę się tworzyć strony internetowe z zastosowaniem najnowszych technologii frontendowych. Obecnie
+                biorę udział
+                w CodersCamp - otwartym kursie programowania webowego odbywającego się we Wrocławiu.
+                <br><br>Wcześniej przez 1,5 roku pracowałem samodzielnie nad Mysterious Realms RPG - grą RPG typu
+                dungeon
+                crawler. Gra miała swoją premierę w październiku 2018 roku i spotkała się z ciepłym przyjęciem fanów.
+                <br><br>W wolnym czasie lubię grać w tenisa, pływać oraz zagrywać się w gry planszowe.
+            </p>
 
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $("button").click(function () {
+            $('html,body').animate({
+                    scrollTop: $("#portfolio").offset().top
+                },
+                'slow');
+        });
+    </script>
 
 </body>
 
