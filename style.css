@@ -114,7 +114,7 @@ div.text {
     width: 50%;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
     header {
         justify-content: center;
@@ -150,35 +150,57 @@ div.text h1 {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1004px) {
+
+@media (max-width: 1004px) {
+
+    ul {
+        margin-top: 0;
+        padding-right: 0;
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1004px) {
 
     div.text p,
     div.text h1 {
-        font-size: 55px;
+        font-size: 35px;
+    }
+
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+
+    div.text p,
+    div.text h1 {
+        font-size: 35px;
     }
 }
 
-@media only screen and (min-width: 641px) and (max-width: 768px) {
+@media (min-width: 461px) and (max-width: 640px) {
 
     div.text p,
     div.text h1 {
-        font-size: 60px;
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    div.text p,
+    div.text h1 {
+        font-size: 35px;
     }
 }
 
-@media only screen and (min-width: 461) and (max-width: 640px) {
+@media (max-width: 640px) {
 
-    div.text p,
-    div.text h1 {
-        font-size: 55px;
-    }
-}
-
-@media only screen and (max-width: 460px) {
-
-    div.text p,
-    div.text h1 {
-        font-size: 45px;
+    li a {
+        font-size: 15px;
+        min-width: 80px;
+        margin: 0 8px;
     }
 }
 
@@ -239,16 +261,11 @@ h2 {
 }
 
 .container a {
-    overflow: hidden scroll;
+    overflow: hidden;
     background-color: black;
 
 }
 
-.container a:nth-child(4),
-.container a:nth-child(5),
-.container a:nth-child(6) {
-    overflow: hidden;
-}
 
 .container a:nth-child(1) {
     grid-area: 1 / 1 / 2 / 2;
@@ -276,7 +293,7 @@ h2 {
 
 
 
-@media only screen and (max-width: 1004px) {
+@media (max-width: 1004px) {
 
     #portfolio .container {
         margin: 50px 20px;
@@ -304,7 +321,7 @@ h2 {
 }
 
 
-@media only screen and (max-width: 640px) {
+@media (max-width: 640px) {
 
     header {
         background-image: url(img/work-731198_640.jpg);
@@ -313,7 +330,7 @@ h2 {
     #portfolio .container {
         margin: 50px 20px;
         display: grid;
-        grid-template: repeat(6, 350px) / 1fr;
+        grid-template: repeat(6, 250px) / 1fr;
         grid-gap: 20px 20px;
     }
 
@@ -344,10 +361,12 @@ h2 {
     height: auto;
 }
 
+.container a:nth-child(3) img,
 .container a:nth-child(4) img,
 .container a:nth-child(5) img,
 .container a:nth-child(6) img {
     height: 100%;
+    overflow: hidden;
 }
 
 .container span {
@@ -441,13 +460,13 @@ h3 {
     text-align: center;
 }
 
-@media only screen and (max-width: 1004px) and (min-width: 768px) {
+@media (max-width: 1004px) and (min-width: 768px) {
     #aboutme {
         margin: default 20px;
     }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 640px) {
+@media (max-width: 768px) and (min-width: 640px) {
     #aboutme {
         margin: default 20px;
     }
@@ -461,7 +480,7 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 640px) and (min-width: 320px) {
+@media (max-width: 640px) and (min-width: 320px) {
     #aboutme .container {
         grid-template: 250px 250px 100px 200px 300px 200px 200px/ 1fr;
     }
@@ -501,9 +520,9 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 500px) and (min-width: 320px) {
+@media (max-width: 500px) and (min-width: 320px) {
     #aboutme .container {
-        grid-template: 320px 320px 100px 200px 300px 200px 200px/ 1fr;
+        grid-template: 360px 360px 100px 200px 450px 250px 200px/ 1fr;
     }
 }
 
@@ -562,7 +581,7 @@ form button {
     text-align: center;
 }
 
-@media only screen and (max-width: 1004px) and (min-width: 641px) {
+@media (max-width: 1004px) and (min-width: 641px) {
 
     .blurimg {
         background-image: url(img/rotary-691528_1280.jpg);
@@ -570,7 +589,7 @@ form button {
 }
 
 
-@media only screen and (max-width: 640px) and (min-width: 320px) {
+@media (max-width: 640px) and (min-width: 320px) {
 
     .blurimg {
         background-image: url(img/rotary-691528_640.jpg);
