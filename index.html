@@ -6,9 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <ul>
+            <li><a href="#" name="anchorPortfolio">Portfolio</a></li>
+            <li><a href="#" name="anchorAbout">O mnie</a></li>
+            <li><a href="#" name="anchorContact">Kontakt</a></li>
+        </ul>
+        <div class="text">
+            <p>Cześć!</p>
+            <h1>Jestem Jacek, Junior Web Developer</h1>
+            <button>Moje Portfolio</button>
+        </div>
+    </header>
+    <section class="wrapper" id="portfolio">
+        <h2>Moje Portfolio</h2>
+        <div class="container">
+            <a href="https://store.steampowered.com/app/752800/Mysterious_Realms_RPG/" target="_blank"><img src="img/websites/website1.png" alt=""></a>
+            <a href="http://mrealms.com/" target="_blank"><img src="img/websites/website2.png" alt=""></a>
+            <a href="http://foxoclock.com/" target="_blank"><img src="img/websites/website3.png" alt=""></a>
+            <a href="#"><img src="img/websites/comingsoon.png" alt=""></a>
+            <a href="#"><img src="img/websites/comingsoon.png" alt=""></a>
+            <a href="#"><img src="img/websites/comingsoon.png" alt=""></a>
+        </div>
+    </section>
+    <section class="wrapper" id="aboutme">
+        <h2>O mnie</h2>
+        <div class="container">
+            <img src="img/avatar.jpg" alt="">
+            <div class="icontainer">
+                <a href="https://www.facebook.com/jacek.dudziec" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://github.com/jacekdudziec" target="_blank"><i class="fab fa-github-square"></i></a>
+            </div>
+            <p>Cześć! Nazywam się <span>Jacek Dudziec</span>. Jestem Junior Web Developerem z Wrocławia. Od pół
+                roku uczę się tworzyć strony internetowe z zastosowaniem najnowszych technologii frontendowych. Obecnie
+                biorę udział
+                w <span>CodersCamp</span> - otwartym kursie programowania webowego odbywającego się we Wrocławiu.
+                <br><br>Wcześniej przez 1,5 roku pracowałem samodzielnie nad <span>Mysterious Realms RPG</span> - grą
+                RPG typu
+                dungeon
+                crawler. Gra miała swoją premierę w październiku 2018 roku i spotkała się z ciepłym przyjęciem fanów.
+                <br>W wolnym czasie lubię grać w tenisa, pływać oraz zagrywać się w gry planszowe.
+            </p>
+            <div id="coderscamp">
+                <p>Czym jest CodersCamp?</p>
+                <p>CodersCamp to 3-miesięczny, darmowy kurs programowania webowego organizowany przez Stowarzyszenie
+                    CodersCrew. Stworzony został z myślą o osobach, które pragną spróbować swoich sił w branży IT lub
+                    po prostu chcą nauczyć się kolejnej przydatnej umiejętności, jaką jest programowanie.</p>
+            </div>
+            <a href="https://coderscamp.pl" target="_blank"></a>
+            <div class="stack">
+                <h3>Technologie opanowane w stopniu średniozaawansowanym</h3>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="learning">
+                <h3>Obecnie się uczę</h3>
+                <i class="fab fa-js-square"></i>
+                <i class="fab fa-react"></i>
+                <i class="fab fa-angular"></i>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="blurimg"></div>
+        <h2>Pozostańmy w kontakcie</h2>
+        <form>
+            <input type="text" placeholder="Twoje imię">
+            <input type="text" placeholder="Email">
+            <textarea placeholder="Twoja wiadomość"></textarea>
+            <button>Wyślij wiadomość</button>
+        </form>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $("button").click(function () {
+            $('html,body').animate({
+                    scrollTop: $("#portfolio").offset().top
+                },
+                'slow');
+        });
+
+        $("a[name=anchorPortfolio]").click(function () {
+            $('html,body').animate({
+                    scrollTop: $("#portfolio").offset().top
+                },
+                'slow');
+        });
+
+        $("a[name=anchorAbout]").click(function () {
+            $('html,body').animate({
+                    scrollTop: $("#aboutme").offset().top
+                },
+                'slow');
+        });
+
+        $("a[name=anchorContact]").click(function () {
+            $('html,body').animate({
+                    scrollTop: $("#contact").offset().top
+                },
+                'slow');
+        });
+    </script>
 
 </body>
 
