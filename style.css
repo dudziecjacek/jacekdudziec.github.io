@@ -150,19 +150,31 @@ div.text h1 {
 
 }
 
+
+@media (max-width: 1004px) {
+
+    ul {
+        margin-top: 0;
+        padding-right: 0;
+    }
+
+
+}
+
 @media (min-width: 769px) and (max-width: 1004px) {
 
     div.text p,
     div.text h1 {
-        font-size: 55px;
+        font-size: 35px;
     }
+
 }
 
 @media (min-width: 641px) and (max-width: 768px) {
 
     div.text p,
     div.text h1 {
-        font-size: 60px;
+        font-size: 35px;
     }
 }
 
@@ -184,11 +196,6 @@ div.text h1 {
 }
 
 @media (max-width: 640px) {
-
-    ul {
-        margin-top: 0;
-        padding-right: 0;
-    }
 
     li a {
         font-size: 15px;
@@ -475,7 +482,7 @@ h3 {
 
 @media (max-width: 640px) and (min-width: 320px) {
     #aboutme .container {
-        grid-template: 220px 220px 100px 200px 300px 200px 200px/ 1fr;
+        grid-template: 250px 250px 100px 200px 300px 200px 200px/ 1fr;
     }
 
     #aboutme .icontainer {
@@ -515,7 +522,7 @@ h3 {
 
 @media (max-width: 500px) and (min-width: 320px) {
     #aboutme .container {
-        grid-template: 360px 360px 100px 200px 450px 250px 250px/ 1fr;
+        grid-template: 360px 360px 100px 200px 450px 250px 200px/ 1fr;
     }
 }
 
